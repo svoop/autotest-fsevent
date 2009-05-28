@@ -2,7 +2,7 @@
   +--------------------------------------------------------------------------+
   |                                                                          |
   |   In order to use autotest-fsevent, the following line has to be added   |
-  |   to the top of ~/.autotest file:                                        |
+  |   *after* all other requires in your ~/.autotest file:                   |
   |                                                                          |
   |   require 'autotest/fsevent'                                             |
   |                                                                          |
