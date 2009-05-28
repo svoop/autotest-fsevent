@@ -1,0 +1,58 @@
+= Autotest FSEvent
+
+* Homepage: http://www.bitcetera.com/products/autotest-fsevent
+* Issues and forum: https://forge.bitcetera.com/projects/show/autotest-fsevent
+
+== DESCRIPTION:
+
+ZenTest's autotest relies on filesystem polling to detect modifications in 
+source code files. In other words: The filesytem is constantly being traversed
+which causes quite some load on both the CPU and the harddrive. This is not 
+healthy for your Mac and if you are working on a portable computer, it will 
+drain your battery in no time. Apple has introduces FSEvent with Mac OS X 10.5 
+which is a very efficient way to have the operating system monitor file 
+alterations. This gem teaches autotest to use FSEvent and therefore be nice 
+to your Mac.
+
+Unlike other test runners for the Mac, autotest-mac does not replace but
+extend autotest and does *not* require RubyCocoa to be installed.
+
+== REQUIREMENTS:
+
+* Mac OS X >= 10.5
+* ZenTest >= 4.0.0
+
+== INSTALL:
+
+First install the gem:
+
+  sudo gem install autotest-fsevent
+
+Then add the following line to your ~/.autotest file:
+
+  require 'autotest/fsevent'
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2009 Sven Schwyn
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

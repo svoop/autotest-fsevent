@@ -1,0 +1,14 @@
+
+  +--------------------------------------------------------------------------+
+  |                                                                          |
+  |   In order to use autotest-fsevent, the following line has to be added   |
+  |   to the top of ~/.autotest file:                                        |
+  |                                                                          |
+  |   require 'autotest/fsevent'                                             |
+  |                                                                          |
+  |   For more information, feedback and bug submissions, please visit:      |
+  |                                                                          |
+  |   See http://www.bitcetera.com/products/mac-fsevent                      |
+  |                                                                          |
+  +--------------------------------------------------------------------------+
+
