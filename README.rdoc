@@ -28,7 +28,8 @@ First install the gem:
 
   sudo gem install autotest-fsevent
 
-Then add the following line to your ~/.autotest file:
+Then add the following line *after all other requires* in your ~/.autotest
+file:
 
   require 'autotest/fsevent'
 

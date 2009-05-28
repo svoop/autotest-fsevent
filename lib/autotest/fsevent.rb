@@ -23,12 +23,10 @@ module Autotest::FSEvent
   Autotest.add_hook :waiting do
     if RUBY_PLATFORM.match(/darwin(\d+)\.?(\d+)?/) && ($1.to_i >= 9 || ($1.to_i == 8 && $2.to_i >= 9))
       `#{File.join(GEM_PATH, 'fsevent', 'fsevent_sleep')} '#{Dir.pwd}' 2>&1`
-
     else
       puts
       puts "autotest-fsevent: #{RUBY_PLATFORM} not supported, please file a bug if you are on Mac OS X 10.5 or above."
     end
-    false
   end
 
 end
