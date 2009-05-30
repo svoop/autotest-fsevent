@@ -21,7 +21,8 @@ module Autotest::FSEvent
   ##
   # Use FSEvent if possible
   Autotest.add_hook :waiting do
-    if RUBY_PLATFORM.match(/darwin(\d+)\.?(\d+)?/) && ($1.to_i >= 9 || ($1.to_i == 8 && $2.to_i >= 9))
+    mac_version = `uname -r`
+    if mac_version.match(/^(\d)\.(\d)/) && (($1.to_i >= 9) || ($1.to_i == 8 && $2.to_i >= 9))
       `#{File.join(GEM_PATH, 'fsevent', 'fsevent_sleep')} '#{Dir.pwd}' 2>&1`
     else
       puts
