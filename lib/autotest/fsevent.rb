@@ -17,7 +17,7 @@ $:.unshift(File.dirname(__FILE__)) unless
 #   require 'autotest/fsevent'
 module Autotest::FSEvent
 
-  VERSION  = '0.1.0'
+  VERSION  = '0.1.1'
   GEM_PATH = File.expand_path(File.join(File.dirname(__FILE__), '../..'))
 
   ##
