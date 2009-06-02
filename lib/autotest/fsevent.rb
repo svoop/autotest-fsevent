@@ -3,9 +3,6 @@ require 'autotest'
 require 'sys/uname'
 include Sys
 
-$:.unshift(File.dirname(__FILE__)) unless
-  $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
-
 ##
 # Autotest::FSEvent
 #
@@ -17,7 +14,6 @@ $:.unshift(File.dirname(__FILE__)) unless
 #   require 'autotest/fsevent'
 module Autotest::FSEvent
 
-  VERSION  = '0.1.1'
   GEM_PATH = File.expand_path(File.join(File.dirname(__FILE__), '../..'))
 
   ##
@@ -27,7 +23,7 @@ module Autotest::FSEvent
       `#{File.join(GEM_PATH, 'fsevent', 'fsevent_sleep')} '#{Dir.pwd}' 2>&1`
     else
       puts
-      puts "autotest-fsevent: #{RUBY_PLATFORM} not supported, please file a bug if you are on Mac OS X 10.5 or above."
+      puts "autotest-fsevent: platform #{Uname.sysname} #{Uname.release} is not supported"
     end
   end
 

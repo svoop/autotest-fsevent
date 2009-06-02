@@ -1,8 +1,8 @@
 require 'rubygems' unless ENV['NO_RUBYGEMS']
 %w[rake rake/clean fileutils newgem rubigen].each { |f| require f }
-require File.dirname(__FILE__) + '/lib/autotest/fsevent'
+require File.dirname(__FILE__) + '/lib/autotest-fsevent'
 
-$hoe = Hoe.new('autotest-fsevent', Autotest::FSEvent::VERSION) do |p|
+$hoe = Hoe.new('autotest-fsevent', AutotestFSEvent::VERSION) do |p|
   p.developer('Sven Schwyn', 'ruby@bitcetera.com')
   p.summary              = %q{Use FSEvent (on Mac OS X 10.5 or higher) instead of filesystem polling.}
   p.description          = %q{ZenTest's autotest relies on filesystem polling to detect modifications in source code files. This is expensive for the CPU, harddrive and battery - and unnecesary on Mac OS X 10.5 or higher which comes with the very efficient FSEvent core service for this purpose. This gem teaches autotest how to use FSEvent.}

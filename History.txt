@@ -1,6 +1,7 @@
 == 0.1.1 2009-06-02
 
-* Check platform with sys-uname instead of RUBY_PLATFORM
+* 1 major improvement
+  * Check platform with sys-uname instead of RUBY_PLATFORM
 
 == 0.1.0 2009-05-28
 
