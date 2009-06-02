@@ -12,6 +12,7 @@ $hoe = Hoe.new('autotest-fsevent', Autotest::FSEvent::VERSION) do |p|
   p.rubyforge_name       = p.name
   p.extra_deps         = [
     ['ZenTest','>= 4.0.0'],
+    ['sys-uname', '>= 0.8.3'],
   ]
   p.extra_dev_deps = [
     ['newgem', ">= #{::Newgem::VERSION}"]

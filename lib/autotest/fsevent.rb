@@ -1,5 +1,7 @@
 require 'rubygems'
 require 'autotest'
+require 'sys/uname'
+include Sys
 
 $:.unshift(File.dirname(__FILE__)) unless
   $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
@@ -20,9 +22,8 @@ module Autotest::FSEvent
 
   ##
   # Use FSEvent if possible
-  Autotest.add_hook :waiting do
-    mac_version = `uname -r`
-    if mac_version.match(/^(\d)\.(\d)/) && (($1.to_i >= 9) || ($1.to_i == 8 && $2.to_i >= 9))
+  Autotest.add_hook :waiting do 
+    if Uname.sysname == 'Darwin' && Uname.release.to_i >= 9
       `#{File.join(GEM_PATH, 'fsevent', 'fsevent_sleep')} '#{Dir.pwd}' 2>&1`
     else
       puts
