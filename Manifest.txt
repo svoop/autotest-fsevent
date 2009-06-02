@@ -4,6 +4,7 @@ PostInstall.txt
 README.rdoc
 Rakefile
 fsevent/fsevent_sleep
+lib/autotest-fsevent.rb
 lib/autotest/fsevent.rb
 script/console
 script/destroy
