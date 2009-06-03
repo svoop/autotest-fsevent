@@ -35,7 +35,7 @@ file:
 
 == DEVELOPMENT:
 
-You can install the bleeding-edge version as follows:
+You can install the bleeding edge version as follows:
 
   sudo gem uninstall autotest-fsevent
   sudo gem install svoop-autotest-fsevent --source http://gems.github.com
