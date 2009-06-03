@@ -1,5 +1,6 @@
 = Autotest FSEvent
 
+* Author: Sven Schwyn (http://www.bitcetera.com)
 * Homepage: http://www.bitcetera.com/products/autotest-fsevent
 * Issues and forum: https://forge.bitcetera.com/projects/show/autotest-fsevent
 
@@ -48,6 +49,12 @@ To contribute code, fork the project on Github, add your code and submit a
 pull request:
 
 http://github.com/guides/fork-a-project-and-submit-your-modifications
+
+== CONTRIBUTIONS:
+
+Thanks to the following folks who have contributed to this project:
+
+* Harry Vangberg
 
 == LICENSE:
 
