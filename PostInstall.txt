@@ -5,4 +5,4 @@ require 'autotest/fsevent'
 
 For more information, feedback and bug submissions, please visit:
 
-See http://www.bitcetera.com/products/mac-fsevent
+http://www.bitcetera.com/products/mac-fsevent
