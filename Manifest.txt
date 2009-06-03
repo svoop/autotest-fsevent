@@ -3,6 +3,7 @@ Manifest.txt
 PostInstall.txt
 README.rdoc
 Rakefile
+autotest-fsevent.gemspec
 fsevent/fsevent_sleep
 lib/autotest-fsevent.rb
 lib/autotest/fsevent.rb

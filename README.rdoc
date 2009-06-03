@@ -33,6 +33,22 @@ file:
 
   require 'autotest/fsevent'
 
+== DEVELOPMENT:
+
+You can install the bleeding-edge version as follows:
+
+  sudo gem uninstall autotest-fsevent
+  sudo gem install svoop-autotest-fsevent --source http://gems.github.com
+
+Please submit issues on:
+
+https://forge.bitcetera.com/projects/show/autotest-fsevent
+
+To contribute code, fork the project on Github, add your code and submit a
+pull request:
+
+http://github.com/guides/fork-a-project-and-submit-your-modifications
+
 == LICENSE:
 
 (The MIT License)
