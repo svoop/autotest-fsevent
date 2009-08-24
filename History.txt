@@ -1,7 +1,8 @@
 == edge
 
-* 1 minor improvement
+* 2 minor improvement
   * Reset the postinstall text color to previous
+  * Prepare for multi-platform extension
 
 == 0.1.1 2009-06-02
 

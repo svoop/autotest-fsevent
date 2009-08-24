@@ -19,9 +19,9 @@ module Autotest::FSEvent
 
   ##
   # Use FSEvent if possible
-  Autotest.add_hook :waiting do 
-    if Uname.sysname == 'Darwin' && Uname.release.to_i >= 9
-      `#{File.join(GEM_PATH, 'fsevent', 'fsevent_sleep')} '#{Dir.pwd}' 2>&1`
+  Autotest.add_hook :waiting do
+    if (Uname.sysname == 'Darwin' && Uname.release.to_i >= 9) || %w(Linux).include?(Uname.sysname)
+      `#{File.join(GEM_PATH, 'fsevent', Uname.sysname.downcase, 'fsevent_sleep')} '#{Dir.pwd}' 2>&1`
     else
       puts
       puts "autotest-fsevent: platform #{Uname.sysname} #{Uname.release} is not supported"
