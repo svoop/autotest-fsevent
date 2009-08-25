@@ -4,7 +4,7 @@ PostInstall.txt
 README.rdoc
 Rakefile
 autotest-fsevent.gemspec
-fsevent/fsevent_sleep
+fsevent/darwin/fsevent_sleep
 lib/autotest-fsevent.rb
 lib/autotest/fsevent.rb
 script/console
