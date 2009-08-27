@@ -28,4 +28,15 @@ module Autotest::FSEvent
     end
   end
 
+  Autotest.add_hook :initialize do
+    class ::Autotest
+      def wait_for_changes
+        begin
+          hook :waiting
+          Kernel.sleep self.sleep
+        end until find_files_to_test
+      end
+    end
+  end
+
 end
