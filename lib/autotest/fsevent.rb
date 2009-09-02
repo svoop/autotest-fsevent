@@ -28,6 +28,8 @@ module Autotest::FSEvent
     end
   end
 
+  ##
+  # Add waiting hook to prevent fallback to polling after ignored files have changed
   Autotest.add_hook :initialize do
     class ::Autotest
       def wait_for_changes

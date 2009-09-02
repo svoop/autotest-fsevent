@@ -3,6 +3,6 @@ $:.unshift(File.dirname(__FILE__)) unless
 
 module AutotestFSEvent
 
-  VERSION  = '0.1.1.3'
+  VERSION  = '0.1.1.4'
 
 end

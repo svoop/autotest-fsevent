@@ -60,6 +60,7 @@ http://github.com/guides/fork-a-project-and-submit-your-modifications
 Thanks to the following folks who have contributed to this project:
 
 * Harry Vangberg
+* Darrick Wiebe
 
 == LICENSE:
 

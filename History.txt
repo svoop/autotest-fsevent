@@ -1,8 +1,9 @@
 == edge
 
-* 2 minor improvement
+* 3 minor improvement
   * Reset the postinstall text color to previous
   * Prepare for multi-platform extension
+  * Patch wait_for_changes to prevent fallback to polling (Darrick Wiebe)
 
 == 0.1.1 2009-06-02
 
