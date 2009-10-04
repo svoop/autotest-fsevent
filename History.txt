@@ -1,5 +1,7 @@
-== edge
+== 0.1.2 2009-10-04
 
+* 1 major improvement
+  * Compatibility with Mac OS X 10.6
 * 3 minor improvement
   * Reset the postinstall text color to previous
   * Prepare for multi-platform extension
