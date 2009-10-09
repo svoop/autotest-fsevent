@@ -16,7 +16,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					527,
+					720,
 					20,
 					48,
 					43,
@@ -33,11 +33,11 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 276333150;
-			PBXWorkspaceStateSaveDate = 276333150;
+			PBXPerProjectTemplateStateSaveDate = 276683356;
+			PBXWorkspaceStateSaveDate = 276683356;
 		};
 		perUserProjectItems = {
-			C96D627B0FC9B3FE0042E988 /* PBXTextBookmark */ = C96D627B0FC9B3FE0042E988 /* PBXTextBookmark */;
+			C9220F4F107DDAB000ABE06C /* PBXTextBookmark */ = C9220F4F107DDAB000ABE06C /* PBXTextBookmark */;
 			C9EDFF4D1078898D00C77A94 /* PBXTextBookmark */ = C9EDFF4D1078898D00C77A94 /* PBXTextBookmark */;
 		};
 		sourceControlManager = C96D62760FC9B2DE0042E988 /* Source Control */;
@@ -46,9 +46,9 @@
 	};
 	08FB7796FE84155DC02AAC07 /* main.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {775, 546}}";
+			sepNavIntBoundsRect = "{{0, 0}, {898, 572}}";
 			sepNavSelRange = "{489, 0}";
-			sepNavVisRange = "{0, 914}";
+			sepNavVisRange = "{0, 1089}";
 		};
 	};
 	8DD76F840486A9BA00D96B5E /* fsevent_sleep */ = {
@@ -56,6 +56,16 @@
 		executables = (
 			C96D626B0FC9B2BD0042E988 /* fsevent_sleep */,
 		);
+	};
+	C9220F4F107DDAB000ABE06C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
+		name = "main.c: 16";
+		rLen = 0;
+		rLoc = 489;
+		rType = 0;
+		vrLen = 1089;
+		vrLoc = 0;
 	};
 	C96D626B0FC9B2BD0042E988 /* fsevent_sleep */ = {
 		isa = PBXExecutable;
@@ -100,16 +110,6 @@
 	C96D62770FC9B2DE0042E988 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
-	};
-	C96D627B0FC9B3FE0042E988 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* main.c */;
-		name = "main.c: 16";
-		rLen = 0;
-		rLoc = 489;
-		rType = 0;
-		vrLen = 884;
-		vrLoc = 0;
 	};
 	C9EDFF4D1078898D00C77A94 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

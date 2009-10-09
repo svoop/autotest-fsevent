@@ -275,7 +275,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {186, 549}}</string>
+							<string>{{0, 0}, {186, 659}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -287,14 +287,14 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {203, 567}}</string>
+						<string>{{0, 0}, {203, 677}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>104 225 974 608 0 0 1440 878 </string>
+						<string>104 115 1167 718 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -322,10 +322,10 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>C9EDFF4D1078898D00C77A94</string>
+										<string>C9220F4F107DDAB000ABE06C</string>
 										<key>history</key>
 										<array>
-											<string>C96D627B0FC9B3FE0042E988</string>
+											<string>C9EDFF4D1078898D00C77A94</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -337,14 +337,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {766, 383}}</string>
+								<string>{{0, 0}, {959, 486}}</string>
 								<key>RubberWindowFrame</key>
-								<string>104 225 974 608 0 0 1440 878 </string>
+								<string>104 115 1167 718 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>383pt</string>
+							<string>486pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -357,18 +357,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 388}, {766, 179}}</string>
+								<string>{{0, 491}, {959, 186}}</string>
 								<key>RubberWindowFrame</key>
-								<string>104 225 974 608 0 0 1440 878 </string>
+								<string>104 115 1167 718 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>179pt</string>
+							<string>186pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>766pt</string>
+					<string>959pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -383,9 +383,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>C9EDFF421078826000C77A94</string>
+				<string>C9220F50107DDAB000ABE06C</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>C9EDFF431078826000C77A94</string>
+				<string>C9220F51107DDAB000ABE06C</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -521,15 +521,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>C9EDFF551078898D00C77A94</string>
-		<string>C9EDFF561078898D00C77A94</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>C96D62740FC9B2DE0042E988</string>
-		<string>/Users/sschwyn/Desktop/src/fsevent_sleep.xcodeproj</string>
+		<string>/Users/sschwyn/Development/autotest-fsevent/fsevent/darwin/src/fsevent_sleep.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>104 225 974 608 0 0 1440 878 </string>
+	<string>104 115 1167 718 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -606,7 +602,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>C96D62740FC9B2DE0042E988</string>
-				<string>C9EDFF441078826000C77A94</string>
+				<string>C9220F52107DDAB000ABE06C</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
