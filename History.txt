@@ -1,4 +1,4 @@
-== Edge
+== 0.1.3 2009-10-12
 
 * 1 major improvement
   * 64bit kernel compatibility workaround
