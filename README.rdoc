@@ -39,12 +39,10 @@ file:
 You can install the bleeding edge version as follows:
 
   sudo gem uninstall autotest-fsevent
-  sudo gem install svoop-autotest-fsevent --source http://gems.github.com
-
-Bleeding-edge gems contains a fourth version digit group (e.g. the .8 in 
-0.1.5.8) to make sure Github builds the gem whenever new code is committed.
-If there is no fourth version digit group, the edge version is identical
-to the stable version from Rubyforge.
+  git clone git://github.com/svoop/autotest-fsevent.git
+  cd autotest-fsevent
+  rake gem
+  rake install_gem
 
 Please submit issues on:
 
