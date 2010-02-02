@@ -6,14 +6,13 @@
 
 == DESCRIPTION:
 
-ZenTest's autotest relies on filesystem polling to detect modifications in 
-source code files. In other words: The filesytem is constantly being traversed
-which causes quite some load on both the CPU and the harddrive. This is not 
-healthy for your Mac and if you are working on a portable computer, it will 
-drain your battery in no time. Apple has introduces FSEvent with Mac OS X 10.5 
-which is a very efficient way to have the operating system monitor file 
-alterations. This gem teaches autotest to use FSEvent and therefore be nice 
-to your Mac.
+Autotest relies on filesystem polling to detect modifications in source code 
+files. In other words: The filesytem is constantly being traversed which causes
+quite some load on both the CPU and the harddrive. This is not healthy for your
+Mac and if you are working on a portable computer, it will drain your battery. 
+Apple has introduces FSEvent with Mac OS X 10.5 which is a very efficient way 
+to have the operating system monitor file alterations. This gem teaches autotest
+to use FSEvent and therefore be nice to your Mac.
 
 Unlike other test runners for the Mac, autotest-mac does not replace but
 extend autotest and does *not* require RubyCocoa to be installed.
@@ -21,7 +20,7 @@ extend autotest and does *not* require RubyCocoa to be installed.
 == REQUIREMENTS:
 
 * Mac OS X >= 10.5
-* ZenTest >= 4.0.0
+* autotest >= 4.2.4
 
 == INSTALL:
 
@@ -34,14 +33,38 @@ file:
 
   require 'autotest/fsevent'
 
+If you like this gem, please consider to recommend me on Working with
+Rails, thank you!
+
+http://workingwithrails.com/recommendation/new/person/11706-sven-schwyn
+
+== UPDATE FROM 0.1.X
+
+As of version 0.2.0 autotest-fsevent no longer requires the ZenTest gem but
+the lighter and improved autotest gem. To update do the following: 
+
+  sudo gem uninstall ZenTest
+  sudo gem update autotest-fsevent
+
+And only if you need all the functionality of ZenTest:
+
+  sudo gem install zentest-without-autotest
+
+== TROUBLESHOOTING:
+
+=== Loading the Plugin Seems to Fail
+
+The reason may be ZenTest which must not be installed. See "Update from 
+0.1.X" for more on this.
+
 == DEVELOPMENT:
 
 You can install the bleeding edge version as follows:
 
   git clone git://github.com/svoop/autotest-fsevent.git
   cd autotest-fsevent
-  rake gem
-  rake install_gem
+  rake build
+  sudo rake install
 
 Please submit issues on:
 
@@ -58,6 +81,7 @@ Thanks to the following folks who have contributed to this project:
 
 * Harry Vangberg
 * Darrick Wiebe
+* Sean DeNigris
 
 == LICENSE:
 

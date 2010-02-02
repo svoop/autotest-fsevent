@@ -1,10 +1,8 @@
-begin
-  require 'spec'
-rescue LoadError
-  require 'rubygems' unless ENV['NO_RUBYGEMS']
-  gem 'rspec'
-  require 'spec'
-end
-
-$:.unshift(File.dirname(__FILE__) + '/../lib')
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'autotest/fsevent'
+require 'spec'
+require 'spec/autorun'
+
+Spec::Runner.configure do |config|
+end

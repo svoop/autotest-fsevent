@@ -18,9 +18,7 @@ module Autotest::FSEvent
 	GEM_PATH = File.expand_path(File.join(File.dirname(__FILE__), '..', '..'))
 
 	##
-	# Use FSEvent if possible
-
-	##
+	# Use FSEvent if possible 
 	# Add waiting hook to prevent fallback to polling after ignored files have changed
 	Autotest.add_hook :initialize do
 		if (Uname.sysname == 'Darwin' && Uname.release.to_i >= 9) || %w(Linux).include?(Uname.sysname)
@@ -39,4 +37,5 @@ module Autotest::FSEvent
 			puts "autotest-fsevent: platform #{Uname.sysname} #{Uname.release} is not supported"
 		end
 	end
+
 end
