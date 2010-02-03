@@ -23,6 +23,7 @@ module Autotest::FSEvent
 	Autotest.add_hook :initialize do
 		if (Uname.sysname == 'Darwin' && Uname.release.to_i >= 9) || %w(Linux).include?(Uname.sysname)
 			class ::Autotest
+			  remove_method :wait_for_changes
 				def wait_for_changes
 					hook :waiting
 					begin
