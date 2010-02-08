@@ -1,7 +1,8 @@
-== Edge
+== 0.2.1 2010-02-08
 
-* 1 minor improvement
+* 2 minor improvements
   * Remove wait_for_changes before redefining it
+  * Add dependency for sys-uname (Cyril Mougel)
 
 == 0.2.0 2010-02-03
 
