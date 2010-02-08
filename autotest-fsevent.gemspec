@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sven Schwyn"]
-  s.date = %q{2010-02-03}
+  s.date = %q{2010-02-08}
   s.description = %q{Autotest relies on filesystem polling to detect modifications in source code files. This is expensive for the CPU, harddrive and battery - and unnecesary on Mac OS X 10.5 or higher which comes with the very efficient FSEvent core service for this very purpose. This gem teaches autotest how to use FSEvent.}
   s.email = %q{ruby@bitcetera.com}
   s.extra_rdoc_files = [
@@ -61,13 +61,16 @@ http://workingwithrails.com/recommendation/new/person/11706-sven-schwyn
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<rspec>, [">= 1.3.0"])
       s.add_runtime_dependency(%q<autotest>, [">= 4.2.4"])
+      s.add_runtime_dependency(%q<sys-uname>, [">= 0"])
     else
       s.add_dependency(%q<rspec>, [">= 1.3.0"])
       s.add_dependency(%q<autotest>, [">= 4.2.4"])
+      s.add_dependency(%q<sys-uname>, [">= 0"])
     end
   else
     s.add_dependency(%q<rspec>, [">= 1.3.0"])
     s.add_dependency(%q<autotest>, [">= 4.2.4"])
+    s.add_dependency(%q<sys-uname>, [">= 0"])
   end
 end
 
