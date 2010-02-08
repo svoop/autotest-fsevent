@@ -21,6 +21,7 @@ extend autotest and does *not* require RubyCocoa to be installed.
 
 * Mac OS X >= 10.5
 * autotest >= 4.2.4
+* sys-uname
 
 == INSTALL:
 
