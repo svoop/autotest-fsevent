@@ -1,3 +1,8 @@
+== 0.2.2 
+
+* 1 major improvement
+  * Build binary at install time (inspired by Michael Hale)
+
 == 0.2.1 2010-02-08
 
 * 2 minor improvements

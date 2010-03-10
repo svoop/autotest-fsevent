@@ -17,15 +17,25 @@ to use FSEvent and therefore be nice to your Mac.
 Unlike other test runners for the Mac, autotest-mac does not replace but
 extend autotest and does *not* require RubyCocoa to be installed.
 
+If you are on Linux, you should take a look at the autotest-inotify gem instead:
+
+http://github.com/ewollesen/autotest-inotify
+
 == REQUIREMENTS:
 
 * Mac OS X >= 10.5
+* Xcode
 * autotest >= 4.2.4
 * sys-uname
 
 == INSTALL:
 
-First install the gem:
+In order to compile the fsevent binary at install time, Xcode (Mac OS X
+Development Suite) must be installed. You can download it for free from:
+
+http://developer.apple.com
+
+Now install the gem:
 
   sudo gem install autotest-fsevent
 
@@ -47,11 +57,25 @@ the lighter and improved autotest gem. To update do the following:
   sudo gem uninstall ZenTest
   sudo gem update autotest-fsevent
 
-And only if you need all the functionality of ZenTest:
+To use autotest with Rails, install the autotest-rails-pure gem instead of
+the famous autotest-rails gem which requires ZenTest:
+
+ sudo gem uninstall autotest-rails
+ sudo gem install autotest-rails-pure
+
+And in case one day you need the more advanced features of ZenTest, install
+the zentest-without-autotest gem alongside autotest:
 
   sudo gem install zentest-without-autotest
 
 == TROUBLESHOOTING:
+
+=== Compilation of fsevent_sleep Failed
+
+Make sure you have Xcode (Mac OS X Development Suite) installed. You can 
+download it for free from:
+
+http://developer.apple.com
 
 === Loading the Plugin Seems to Fail
 

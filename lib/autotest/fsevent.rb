@@ -21,14 +21,13 @@ module Autotest::FSEvent
 	# Use FSEvent if possible 
 	# Add waiting hook to prevent fallback to polling after ignored files have changed
 	Autotest.add_hook :initialize do
-		if (Uname.sysname == 'Darwin' && Uname.release.to_i >= 9) || %w(Linux).include?(Uname.sysname)
+		if Uname.sysname == 'Darwin' && Uname.release.to_i >= 9
 			class ::Autotest
 			  remove_method :wait_for_changes
 				def wait_for_changes
 					hook :waiting
 					begin
-						#     `#{File.join(GEM_PATH, 'fsevent', Uname.sysname.downcase, 'fsevent_sleep')} '#{Dir.pwd}' 2>&1`
-						`cd '#{Dir.pwd}'; #{File.join(GEM_PATH, 'fsevent', Uname.sysname.downcase, 'fsevent_sleep')} . 2>&1`
+						`cd '#{Dir.pwd}'; #{File.join(GEM_PATH, 'bin', 'fsevent_sleep')} . 2>&1`
 						Kernel.sleep self.sleep
 					end until find_files_to_test
 				end

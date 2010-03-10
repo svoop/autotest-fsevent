@@ -13,7 +13,7 @@ begin
     gem.post_install_message = "\n\e[1;32m" + File.read('PostInstall.txt') + "\e[0m\n"
     gem.files = [
       "CHANGELOG.txt",
-      "fsevent/darwin/fsevent_sleep",
+      "ext/fsevent/fsevent_sleep.c",
       "lib/autotest/fsevent.rb"
     ]
     gem.add_development_dependency "rspec", ">= 1.3.0"

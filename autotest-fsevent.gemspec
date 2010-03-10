@@ -5,20 +5,21 @@
 
 Gem::Specification.new do |s|
   s.name = %q{autotest-fsevent}
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sven Schwyn"]
-  s.date = %q{2010-02-08}
+  s.date = %q{2010-03-10}
   s.description = %q{Autotest relies on filesystem polling to detect modifications in source code files. This is expensive for the CPU, harddrive and battery - and unnecesary on Mac OS X 10.5 or higher which comes with the very efficient FSEvent core service for this very purpose. This gem teaches autotest how to use FSEvent.}
   s.email = %q{ruby@bitcetera.com}
+  s.extensions = ["ext/fsevent/extconf.rb"]
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
   ]
   s.files = [
     "CHANGELOG.txt",
-     "fsevent/darwin/fsevent_sleep",
+     "ext/fsevent/fsevent_sleep.c",
      "lib/autotest/fsevent.rb"
   ]
   s.homepage = %q{http://www.bitcetera.com/products/autotest-fsevent}
@@ -38,10 +39,8 @@ Rails, thank you!
 http://workingwithrails.com/recommendation/new/person/11706-sven-schwyn
 
 +-------------------------------------------------------------------------+
-| READ THIS IF YOU ARE UPGRADING FROM 0.1.X                               |
-| As of 0.2.0 this gem no longer depends on the rather heavy ZenTest gem  |
-| but the more lightweight autotest gem. You MUST uninstall ZenTest now!  |
-| Please refer to the README in case you need more ZenTest functionality. |
+| UPGRADING USERS please take a look at the README now for important news |
+| related to modified dependencies since 0.1.x and Rails compatibility.   |
 +-------------------------------------------------------------------------+
 [0m
 }
