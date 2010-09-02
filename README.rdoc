@@ -25,7 +25,8 @@ http://github.com/ewollesen/autotest-inotify
 
 * Mac OS X >= 10.5
 * Xcode
-* autotest >= 4.2.4
+* either autotest (recommened) or ZenTest
+* rspec ~> 1.3
 * sys-uname
 
 == INSTALL:
@@ -34,6 +35,13 @@ In order to compile the fsevent binary at install time, Xcode (Mac OS X
 Development Suite) must be installed. You can download it for free from:
 
 http://developer.apple.com
+
+Furthermore you have to decide whether you want to use the lightweight
+autotest gem (recommended) or the more comprehensive ZenTest gem and install 
+either of them:
+
+  sudo gem install autotest     --OR--
+  sudo gem install ZenTest
 
 Now install the gem:
 
@@ -51,8 +59,9 @@ http://workingwithrails.com/recommendation/new/person/11706-sven-schwyn
 
 == UPDATE FROM 0.1.X
 
-As of version 0.2.0 autotest-fsevent no longer requires the ZenTest gem but
-the lighter and improved autotest gem. To update do the following: 
+As of version 0.2.X autotest-fsevent no longer requires the ZenTest gem but
+either ZenTest or it's lighter twin autotest (recommended). To update and
+switch do the following:
 
   sudo gem uninstall ZenTest
   sudo gem update autotest-fsevent
@@ -113,7 +122,7 @@ Thanks to the following folks who have contributed to this project:
 
 (The MIT License)
 
-Copyright (c) 2009 Sven Schwyn
+Copyright (c) 2010 Sven Schwyn
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
