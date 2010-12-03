@@ -96,8 +96,9 @@ You can install the bleeding edge version as follows:
 
   git clone git://github.com/svoop/autotest-fsevent.git
   cd autotest-fsevent
+  bundle install
   rake build
-  sudo rake install
+  rake install
 
 Please submit issues on:
 
