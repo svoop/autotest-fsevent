@@ -16,13 +16,15 @@ emulate_extension_install('fsevent')
 
 # Compile the actual fsevent_sleep binary
 
-raise "Only Darwin (Mac OS X) systems are supported" unless `uname -s`.chomp == 'Darwin'
+# Only Darwin (Mac OS X) systems are supported
+exit unless `uname -s`.chomp == 'Darwin'
 
 GEM_ROOT       = File.expand_path(File.join('..', '..'))
 DARWIN_VERSION = `uname -r`.to_i
 SDK_VERSION    = { 9 => '10.5', 10 => '10.6', 11 => '10.7' }[DARWIN_VERSION]
 
-raise "Darwin #{DARWIN_VERSION} is not (yet) supported" unless SDK_VERSION
+# Only Darwin 9, 10, 11 are supported
+exit unless SDK_VERSION
 
 `mkdir -p #{File.join(GEM_ROOT, 'bin')}`
 `CFLAGS='-isysroot /Developer/SDKs/MacOSX#{SDK_VERSION}.sdk -mmacosx-version-min=#{SDK_VERSION}' /usr/bin/gcc -framework CoreServices -o "#{GEM_ROOT}/bin/fsevent_sleep" fsevent_sleep.c`
