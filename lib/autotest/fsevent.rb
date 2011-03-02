@@ -15,7 +15,7 @@ include Sys
 #   require 'autotest/fsevent'
 module Autotest::FSEvent
 
-	GEM_PATH = File.expand_path(File.join(File.dirname(__FILE__), '..', '..'))
+	GEM_PATH = File.expand_path(File.join(File.dirname(__FILE__), '..', '..')) unless defined?(GEM_PATH)
 
 	##
 	# Use FSEvent if possible 
