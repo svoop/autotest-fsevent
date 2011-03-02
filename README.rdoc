@@ -117,6 +117,7 @@ Thanks to the following folks who have contributed to this project:
 * Darrick Wiebe
 * Sean DeNigris
 * Cyril Mougel
+* Robert Lowe
 
 == LICENSE:
 
