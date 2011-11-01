@@ -20,7 +20,7 @@ raise "Only Darwin (Mac OS X) systems are supported" unless `uname -s`.chomp == 
 
 GEM_ROOT       = File.expand_path(File.join('..', '..'))
 DARWIN_VERSION = `uname -r`.to_i
-SDK_VERSION    = { 9 => '10.5', 10 => '10.6', 11 => '10.7' }[DARWIN_VERSION]
+SDK_VERSION    = { 9 => '10.5', 10 => '10.6', 11 => '10.7', 12 => '10.8' }[DARWIN_VERSION]
 
 raise "Darwin #{DARWIN_VERSION} is not (yet) supported" unless SDK_VERSION
 
