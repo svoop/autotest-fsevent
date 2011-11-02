@@ -1,6 +1,11 @@
 == 0.2.6 2011-11-02
 
 * 1 minor improvement
+  * Use File.exists? which is both Ruby 1.8 and 1.9
+
+== 0.2.6 2011-11-02
+
+* 1 minor improvement
   * Add FSEVENT_SLEEP environment variable for prebuilt binaries
 
 == 0.2.5 2011-03-02
