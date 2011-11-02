@@ -39,12 +39,12 @@ Furthermore, you have to decide whether you want to use the comprehensive
 ZenTest gem or the lightweight autotest-standalone gem and install either 
 of them. (See "Autotest" below for more on this.)
 
-  sudo gem install ZenTest   --OR--
-  sudo gem install autotest-standalone
+  gem install ZenTest   --OR--
+  gem install autotest-standalone
 
 Now install the gem:
 
-  sudo gem install autotest-fsevent
+  gem install autotest-fsevent
 
 Then add the following line *after all other requires* in your ~/.autotest
 file:
@@ -89,6 +89,12 @@ Make sure you have Xcode (Mac OS X Development Suite) installed. You can
 download it for free from:
 
 http://developer.apple.com
+
+If you don't want to install Xcode, download and use a prebuilt fsevent_sleep 
+from https://github.com/svoop/autotest-fsevent/tree/master/prebuilt, make the
+downloaded binary executable and install the gem as follows:
+
+  FSEVENT_SLEEP="/absolute/path/to/fsevent_sleep" gem install autotest-fsevent
 
 == DEVELOPMENT:
 
