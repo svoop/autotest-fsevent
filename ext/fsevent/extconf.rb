@@ -29,8 +29,8 @@ if ENV.has_key?('FSEVENT_SLEEP')
   require 'fileutils'
   FileUtils.cp(ENV['FSEVENT_SLEEP'], "#{GEM_ROOT}/bin/fsevent_sleep", :preserve => true)
   raise "\e[1;31mInstallation of fsevent_sleep binary failed - see README for assistance\e[0m" unless File.executable?("#{GEM_ROOT}/bin/fsevent_sleep")
-elsif File.exists?('/Developer/Applications/Xcode.app')
-  `CFLAGS='-isysroot /Developer/SDKs/MacOSX#{SDK_VERSION}.sdk -mmacosx-version-min=#{SDK_VERSION}' /usr/bin/gcc -framework CoreServices -o "#{GEM_ROOT}/bin/fsevent_sleep" fsevent_sleep.c`
+elsif File.exists?('/Applications/Xcode.app')
+  `CFLAGS='-isysroot /Applications/Xcode.app/Contents/Developer/SDKs/MacOSX#{SDK_VERSION}.sdk -mmacosx-version-min=#{SDK_VERSION}' /usr/bin/gcc -framework CoreServices -o "#{GEM_ROOT}/bin/fsevent_sleep" fsevent_sleep.c`
   raise "\e[1;31mCompilation of fsevent_sleep binary failed - see README for assistance\e[0m" unless File.executable?("#{GEM_ROOT}/bin/fsevent_sleep")
 else
   raise "\e[1;31mXcode not found - see README for assistance\e[0m"
