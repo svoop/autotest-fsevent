@@ -124,6 +124,7 @@ Thanks to the following folks who have contributed to this project:
 * Sean DeNigris
 * Cyril Mougel
 * Robert Lowe
+* Pavel Forkert
 
 == LICENSE:
 

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    autotest-fsevent (0.2.7)
+    autotest-fsevent (0.2.8)
       sys-uname
 
 GEM
