@@ -20,8 +20,8 @@ module Autotest::FSEvent
   ##
   # Use FSEvent if possible 
   # Add waiting hook to prevent fallback to polling after ignored files have changed
-  Autotest.add_hook :initialize do
-    if Uname.sysname == 'Darwin' && Uname.release.to_i >= 9
+  if Uname.sysname == 'Darwin' && Uname.release.to_i >= 9
+    Autotest.add_hook :initialize do
       class ::Autotest
         remove_method :wait_for_changes
         def wait_for_changes
@@ -32,9 +32,6 @@ module Autotest::FSEvent
           end until find_files_to_test
         end
       end
-    else
-      puts
-      puts "autotest-fsevent: platform #{Uname.sysname} #{Uname.release} is not supported"
     end
   end
 
