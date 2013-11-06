@@ -1,3 +1,8 @@
+== 0.2.9 2013-06-11
+
+* 1 minor improvement
+  * Add support for Mac OS X 10.9 Mavericks.
+
 == 0.2.8 2012-02-21
 
 * 2 major improvements
