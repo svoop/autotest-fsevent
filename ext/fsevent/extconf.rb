@@ -19,10 +19,10 @@ emulate_extension_install('fsevent')
 if `uname -s`.chomp == 'Darwin'
   GEM_ROOT       = File.expand_path(File.join('..', '..'))
   DARWIN_VERSION = `uname -r`.to_i
-  SDK_VERSION    = { 9 => '10.5', 10 => '10.6', 11 => '10.7', 12 => '10.8', 13 => '10.9' }[DARWIN_VERSION]
-  
+  SDK_VERSION    = { 9 => '10.5', 10 => '10.6', 11 => '10.7', 12 => '10.8', 13 => '10.9',  14 => '10.10' }[DARWIN_VERSION]
+
   raise "Darwin #{DARWIN_VERSION} is not (yet) supported" unless SDK_VERSION
-  
+
   `mkdir -p #{File.join(GEM_ROOT, 'bin')}`
   if ENV.has_key?('FSEVENT_SLEEP')
     require 'fileutils'
@@ -38,4 +38,3 @@ if `uname -s`.chomp == 'Darwin'
     raise "\e[1;31mXcode not found - see README for assistance\e[0m"
   end
 end
-
