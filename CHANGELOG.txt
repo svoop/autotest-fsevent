@@ -1,17 +1,22 @@
 == 0.2.11 2015-10-05
 
 * 1 minor improvement
-  * Add support for Mac OS X 10.11 El Capitan
+  * Add support for macOS 10.12 Sierra
+
+== 0.2.11 2015-10-05
+
+* 1 minor improvement
+  * Add support for macOS 10.11 El Capitan
 
 == 0.2.10 2014-10-23
 
 * 1 minor improvement
-  * Add support for Mac OS X 10.10 Yosemite
+  * Add support for macOS 10.10 Yosemite
 
 == 0.2.9 2013-06-11
 
 * 1 minor improvement
-  * Add support for Mac OS X 10.9 Mavericks.
+  * Add support for macOS 10.9 Mavericks.
 
 == 0.2.8 2012-02-21
 
@@ -73,7 +78,7 @@
 == 0.1.2 2009-10-04
 
 * 1 major improvement
-  * Compatibility with Mac OS X 10.6
+  * Compatibility with macOS 10.6
 * 3 minor improvements
   * Reset the postinstall text color to previous
   * Prepare for multi-platform extension
@@ -87,5 +92,5 @@
 == 0.1.0 2009-05-28
 
 * Initial release
-  * FSEvent instead of filesystem polling on Mac OS X 10.5 or higher
+  * FSEvent instead of filesystem polling on macOS 10.5 or higher
   * Formerly part of autotest-mac which is now deprecated
