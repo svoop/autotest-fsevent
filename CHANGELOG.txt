@@ -1,4 +1,9 @@
-== 0.2.11 2015-10-05
+== 0.2.13 2017-10-16
+
+* 1 minor improvement
+  * Add support for macOS 10.13 High Sierra
+
+== 0.2.12 2016-09-26
 
 * 1 minor improvement
   * Add support for macOS 10.12 Sierra
