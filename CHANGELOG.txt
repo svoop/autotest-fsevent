@@ -1,3 +1,8 @@
+== 0.2.14 2018-10-02
+
+* 1 minor improvement
+  * Add support for macOS 10.14 Mojave
+
 == 0.2.13 2017-10-16
 
 * 1 minor improvement
