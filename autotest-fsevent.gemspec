@@ -1,28 +1,30 @@
-# -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "autotest-fsevent/version"
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'autotest-fsevent/version'
 
-Gem::Specification.new do |s|
-  s.name        = "autotest-fsevent"
-  s.version     = Autotest::FSEvent::VERSION
-  s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Sven Schwyn"]
-  s.email       = ["ruby@bitcetera.com"]
-  s.homepage    = "http://www.bitcetera.com/products/autotest-fsevent"
-  s.summary     = %q{Use FSEvent (on Mac OS X 10.5 or higher) instead of filesystem polling.}
-  s.description = %q{Autotest relies on filesystem polling to detect modifications in source code files. This is expensive for the CPU, harddrive and battery - and unnecesary on Mac OS X 10.5 or higher which comes with the very efficient FSEvent core service for this very purpose. This gem teaches autotest how to use FSEvent.}
+Gem::Specification.new do |spec|
+  spec.name          = 'autotest-fsevent'
+  spec.version       = Autotest::FSEvent::VERSION
+  spec.authors       = ['Sven Schwyn']
+  spec.email         = ['ruby@bitcetera.com']
+  spec.description   = %q(Autotest relies on filesystem polling to detect modifications in source code files. This is expensive for the CPU, harddrive and battery - and unnecesary on Mac OS X 10.5 or higher which comes with the very efficient FSEvent core service for this very purpose. This gem teaches autotest how to use FSEvent.)
+  spec.summary       = %q(Use FSEvent (on Mac OS X 10.5 or higher) instead of filesystem polling.)
+  spec.homepage      = 'https://github.com/svoop/autotest-fsevent'
+  spec.license       = 'MIT'
 
-  s.rubyforge_project = "autotest-fsevent"
+  spec.files         = `git ls-files`.split($/)
+  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.require_paths = ['lib']
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  spec.post_install_message = "\e[1;32m\n" + ('-' * 79) + "\n\n" + File.read('post-install.txt').strip + "\n\n" + ('-' * 79) + "\n\e[0m"
 
-  s.post_install_message = "\e[1;32m\n" + ('-' * 79) + "\n\n" + File.read('PostInstall.txt').strip + "\n\n" + ('-' * 79) + "\n\e[0m"
-  s.extensions = ["ext/fsevent/extconf.rb"]
-  s.add_dependency "sys-uname"
-  s.add_development_dependency "rake"
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "ZenTest"
+  spec.extensions = ['ext/fsevent/extconf.rb']
+
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'minitest'
+  spec.add_development_dependency "minitest-autotest"
+
+  spec.add_runtime_dependency 'sys-uname'
 end

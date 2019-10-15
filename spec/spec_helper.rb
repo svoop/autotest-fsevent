@@ -1,8 +1,6 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-require 'autotest/fsevent'
-require 'rspec'
-require 'rspec/autorun'
+gem 'minitest'
 
-RSpec.configure do |config|
-end
+require 'pathname'
+
+require 'minitest/autorun'
+require Pathname(__dir__).join('..', 'lib', 'autotest-fsevent')

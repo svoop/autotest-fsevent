@@ -1,0 +1,32 @@
+PATH
+  remote: .
+  specs:
+    autotest-fsevent (0.2.15)
+      sys-uname
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ffi (1.11.1)
+    minitest (5.12.2)
+    minitest-autotest (1.1.1)
+      minitest-server (~> 1.0)
+      path_expander (~> 1.0)
+    minitest-server (1.0.5)
+      minitest (~> 5.0)
+    path_expander (1.1.0)
+    rake (13.0.0)
+    sys-uname (1.1.0)
+      ffi (>= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  autotest-fsevent!
+  minitest
+  minitest-autotest
+  rake
+
+BUNDLED WITH
+   2.0.2
