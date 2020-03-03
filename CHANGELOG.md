@@ -1,3 +1,8 @@
+## 0.2.16
+
+#### Changes
+* Bundle updated
+
 ## 0.2.15
 
 #### Additions
