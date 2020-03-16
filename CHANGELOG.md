@@ -1,4 +1,4 @@
-## 0.2.17 (unreleased)
+## 0.2.17
 
 #### Minor Changes
 * Sign gem and add checksums
