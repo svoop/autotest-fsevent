@@ -1,3 +1,8 @@
+## 0.2.17 (unreleased)
+
+#### Minor Changes
+* Sign gem and add checksums
+
 ## 0.2.16
 
 #### Changes
