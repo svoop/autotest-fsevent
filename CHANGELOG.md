@@ -1,6 +1,7 @@
-## 0.2.18 (unreleased)
+## 0.2.18
 
-Nothing so far
+#### Additions
+* Support for macOS 11 Big Sur (plus next likely release)
 
 ## 0.2.17
 
