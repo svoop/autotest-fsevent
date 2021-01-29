@@ -1,3 +1,7 @@
+## 0.2.19 (unreleased)
+
+Nothing so far
+
 ## 0.2.18
 
 #### Additions
