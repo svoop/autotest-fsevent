@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata = {
     'homepage_uri'      => spec.homepage,
-    'changelog_uri'     => 'https://github.com/svoop/autotest-fsevent/blob/master/CHANGELOG.md',
+    'changelog_uri'     => 'https://github.com/svoop/autotest-fsevent/blob/main/CHANGELOG.md',
     'source_code_uri'   => 'https://github.com/svoop/autotest-fsevent',
     'documentation_uri' => 'https://www.rubydoc.info/gems/autotest-fsevent',
     'bug_tracker_uri'   => 'https://github.com/svoop/autotest-fsevent/issues'

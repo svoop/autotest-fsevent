@@ -15,7 +15,7 @@ Apple has introduced FSEvent with Mac OS X 10.5 which is a very efficient way to
 This gem is [cryptographically signed](https://guides.rubygems.org/security/#using-gems) in order to assure it hasn't been tampered with. Unless already done, please add the author's public key as a trusted certificate now:
 
 ```
-gem cert --add <(curl -Ls https://raw.github.com/svoop/aipp/master/certs/{HANDLE}.pem)
+gem cert --add <(curl -Ls https://raw.github.com/svoop/autotest-fsevent/main/certs/{HANDLE}.pem)
 ```
 
 In order to compile the fsevent binary at install time, Xcode (macOS development suite) must be installed. You can download it for free from:
@@ -58,7 +58,7 @@ Make sure you have Xcode (Mac OS X Development Suite) installed. You can downloa
 
 https://developer.apple.com
 
-If you don't want to install Xcode, [download the prebuilt fsevent_sleep binary](https://github.com/svoop/autotest-fsevent/tree/master/prebuilt), make the downloaded binary executable and install the gem as follows:
+If you don't want to install Xcode, [download the prebuilt fsevent_sleep binary](https://github.com/svoop/autotest-fsevent/tree/main/prebuilt), make the downloaded binary executable and install the gem as follows:
 
 ```
 FSEVENT_SLEEP="/absolute/path/to/fsevent_sleep" gem install autotest-fsevent
