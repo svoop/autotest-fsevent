@@ -15,7 +15,7 @@ Apple has introduced FSEvent with Mac OS X 10.5 which is a very efficient way to
 This gem is [cryptographically signed](https://guides.rubygems.org/security/#using-gems) in order to assure it hasn't been tampered with. Unless already done, please add the author's public key as a trusted certificate now:
 
 ```
-gem cert --add <(curl -Ls https://raw.github.com/svoop/autotest-fsevent/main/certs/{HANDLE}.pem)
+gem cert --add <(curl -Ls https://raw.github.com/svoop/autotest-fsevent/main/certs/svoop.pem)
 ```
 
 In order to compile the fsevent binary at install time, Xcode (macOS development suite) must be installed. You can download it for free from:
