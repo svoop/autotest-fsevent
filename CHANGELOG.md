@@ -1,6 +1,7 @@
-## 0.2.19 (unreleased)
+## 0.2.19
 
-Nothing so far
+#### Changes
+* Support any past and future version of macOS in Darwin map
 
 ## 0.2.18
 
