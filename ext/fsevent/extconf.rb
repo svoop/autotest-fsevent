@@ -25,14 +25,14 @@ if `uname -s`.chomp == 'Darwin'
   if ENV.has_key?('FSEVENT_SLEEP')
     require 'fileutils'
     FileUtils.cp(ENV['FSEVENT_SLEEP'], "#{gem_root}/bin/fsevent_sleep", :preserve => true)
-    raise "\e[1;31mInstallation of fsevent_sleep binary failed - see README for assistance\e[0m" unless File.executable?("#{gem_root}/bin/fsevent_sleep")
+    fail "Installation of fsevent_sleep binary failed - see README for assistance" unless File.executable?("#{gem_root}/bin/fsevent_sleep")
   elsif File.exists?('/Developer/Applications/Xcode.app')
     `CFLAGS='-isysroot /Developer/SDKs/MacOSX#{sdk_version}.sdk -mmacosx-version-min=#{sdk_version}' /usr/bin/gcc -framework CoreServices -o "#{gem_root}/bin/fsevent_sleep" fsevent_sleep.c`
-    raise "\e[1;31mCompilation of fsevent_sleep binary failed - see README for assistance\e[0m" unless File.executable?("#{gem_root}/bin/fsevent_sleep")
+    fail "Compilation of fsevent_sleep binary failed - see README for assistance" unless File.executable?("#{gem_root}/bin/fsevent_sleep")
   elsif File.exists?('/Applications/Xcode.app') # Xcode 4.3
     `CFLAGS='-isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX#{sdk_version}.sdk -mmacosx-version-min=#{sdk_version}' /usr/bin/gcc -framework CoreServices -o "#{gem_root}/bin/fsevent_sleep" fsevent_sleep.c`
-    raise "\e[1;31mCompilation of fsevent_sleep binary failed - see README for assistance\e[0m" unless File.executable?("#{gem_root}/bin/fsevent_sleep")
+    fail "Compilation of fsevent_sleep binary failed - see README for assistance" unless File.executable?("#{gem_root}/bin/fsevent_sleep")
   else
-    raise "\e[1;31mXcode not found - see README for assistance\e[0m"
+    fail "Xcode not found - see README for assistance"
   end
 end
