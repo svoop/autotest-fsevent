@@ -1,4 +1,6 @@
+.DS_Store
+.direnv
+.envrc
 pkg/*
 *.gem
 .bundle
-.DS_Store
