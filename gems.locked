@@ -1,20 +1,20 @@
 PATH
   remote: .
   specs:
-    autotest-fsevent (0.2.19)
+    autotest-fsevent (0.2.20)
       sys-uname
 
 GEM
   remote: https://rubygems.org/
   specs:
     ffi (1.15.5)
-    minitest (5.15.0)
+    minitest (5.16.3)
     minitest-autotest (1.1.1)
       minitest-server (~> 1.0)
       path_expander (~> 1.0)
     minitest-server (1.0.6)
       minitest (~> 5.0)
-    path_expander (1.1.0)
+    path_expander (1.1.1)
     rake (13.0.6)
     sys-uname (1.2.2)
       ffi (~> 1.1)
