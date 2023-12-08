@@ -1,5 +1,9 @@
 ## Main
 
+Nothing so far
+
+## 0.2.21
+
 #### Fixes
 * Use `File#exist?` ([@dskecse](https://github.com/svoop/autotest-fsevent/pull/14))
 
