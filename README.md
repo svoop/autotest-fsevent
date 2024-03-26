@@ -1,5 +1,5 @@
 [![Version](https://img.shields.io/gem/v/autotest-fsevent.svg?style=flat)](https://rubygems.org/gems/autotest-fsevent)
-[![Donorbox](https://img.shields.io/badge/donate-on_donorbox-yellow.svg)](https://donorbox.org/bitcetera)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/svoop.svg)](https://github.com/sponsors/svoop)
 
 # autotest-fsevent
 
@@ -9,6 +9,8 @@ Apple has introduced FSEvent with Mac OS X 10.5 which is a very efficient way to
 
 * [Homepage](https://github.com/svoop/autotest-fsevent)
 * Author: [Sven Schwyn - Bitcetera](http://www.bitcetera.com)
+
+Thank you for supporting free and open-source software by sponsoring on [GitHub](https://github.com/sponsors/svoop) or on [Donorbox](https://donorbox.com/bitcetera). Any gesture is appreciated, from a single Euro for a ☕️ cup of coffee to 🍹 early retirement.
 
 ## Install
 
