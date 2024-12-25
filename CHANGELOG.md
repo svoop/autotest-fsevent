@@ -1,6 +1,8 @@
 ## Main
 
-Nothing so far
+#### Changes
+* Update Ruby to 3.4
+* Remove and ignore gems.locked
 
 ## 0.2.21
 
