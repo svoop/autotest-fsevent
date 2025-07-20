@@ -2,6 +2,7 @@
 
 ### Changes
 * Drop certs
+* Add action for trusted release
 
 ## 0.2.22
 
