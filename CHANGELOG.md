@@ -1,5 +1,9 @@
 ## Main
 
+Nothing so far
+
+## 0.3.0
+
 ### Changes
 * Drop certs
 * Add action for trusted release
