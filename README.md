@@ -14,12 +14,6 @@ Thank you for supporting free and open-source software by sponsoring on [GitHub]
 
 ## Install
 
-This gem is [cryptographically signed](https://guides.rubygems.org/security/#using-gems) in order to assure it hasn't been tampered with. Unless already done, please add the author's public key as a trusted certificate now:
-
-```
-gem cert --add <(curl -Ls https://raw.github.com/svoop/autotest-fsevent/main/certs/svoop.pem)
-```
-
 In order to compile the fsevent binary at install time, Xcode (macOS development suite) must be installed. You can download it for free from:
 
 https://developer.apple.com
@@ -39,7 +33,7 @@ gem autotest-fsevent, group: :development
 And securely install the bundle:
 
 ```
-bundle install --trust-policy MediumSecurity
+bundle install
 ```
 
 Then add the following line *after all other requires* in your `~/.autotest` file:

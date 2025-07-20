@@ -1,155 +1,156 @@
 ## Main
 
-Nothing so far
+### Changes
+* Drop certs
 
 ## 0.2.22
 
-#### Changes
+### Changes
 * Update Ruby to 3.4
 * Remove and ignore gems.locked
 
 ## 0.2.21
 
-#### Fixes
+### Fixes
 * Use `File#exist?` ([@dskecse](https://github.com/svoop/autotest-fsevent/pull/14))
 
 ## 0.2.20
 
-#### Changes
+### Changes
 * Certificate updated
 
 ## 0.2.19
 
-#### Changes
+### Changes
 * Support any past and future version of macOS in Darwin map
 
 ## 0.2.18
 
-#### Additions
+### Additions
 * Support for macOS 11 Big Sur (plus next likely release)
 
 ## 0.2.17
 
-#### Minor Changes
+### Minor Changes
 * Sign gem and add checksums
 
 ## 0.2.16
 
-#### Changes
+### Changes
 * Bundle updated
 
 ## 0.2.15
 
-#### Additions
+### Additions
 * Support for macOS 10.15 Catalina
 
-#### Changes
+### Changes
 * Drop RSpec in favor of minitest
 * Rewrite README, CHANGELOG etc
 
 ## 0.2.14
 
-#### Additions
+### Additions
 * Support for macOS 10.14 Mojave
 
 ## 0.2.13
 
-#### Additions
+### Additions
 * Support for macOS 10.13 High Sierra
 
 ## 0.2.12
 
-#### Additions
+### Additions
 * Support for macOS 10.12 Sierra
 
 ## 0.2.11
 
-#### Additions
+### Additions
 * Support for macOS 10.11 El Capitan
 
 ## 0.2.10
 
-#### Additions
+### Additions
 * Support for macOS 10.10 Yosemite
 
 ## 0.2.9
 
-#### Additions
+### Additions
 * Support for macOS 10.9 Mavericks
 
 ## 0.2.8
 
-#### Changes
+### Changes
 * Compatiblity with Xcode 4.3 (Pavel Forkert)
 * Do nothing if installed on non-Darwin OS
 
 ## 0.2.7
 
-#### Changes
+### Changes
 * Use `File.exists?` which is both Ruby 1.8 and 1.9
 
 ## 0.2.6
 
-#### Additions
+### Additions
 * Add FSEVENT_SLEEP environment variable for prebuilt binaries
 
 ## 0.2.5
 
-#### Changes
+### Changes
 * Don't reset GEMPATH if already set (Robert Lowe)
 
 ## 0.2.4
 
-#### Changes
+### Changes
 * Update README due to autotest naming disagreement
 * Switch from Jeweler to Bundler for development
 
 ## 0.2.3
 
-#### Changes
+### Changes
 * Remove dependency on autotest
 * Loosen dependency on rspec
 
 ## 0.2.2
 
-#### Additions
+### Additions
 * Build binary at install time (inspired by Michael Hale)
 
 ## 0.2.1
 
-#### Changes
+### Changes
 * Remove wait_for_changes before redefining it
 * Add dependency for sys-uname (Cyril Mougel)
 
 ## 0.2.0
 
-#### Changes
+### Changes
 * Change dependency from "ZenTest" to lightweight "autotest"
 * Move waiting hook outside the loop (Sean DeNigris)
 
 ## 0.1.3
 
-#### Changes
+### Changes
 * 64bit kernel compatibility workaround
 * Update README for development to reflect changes at Github
 
 ## 0.1.2
 
-#### Additions
+### Additions
 * Support for macOS 10.6 Snow Leopard
 
-#### Changes
+### Changes
 * Reset the postinstall text color to previous
 * Prepare for multi-platform extension
 * Patch wait_for_changes to prevent fallback to polling (Darrick Wiebe)
 
 ## 0.1.1
 
-#### Changes
+### Changes
 * Check platform with sys-uname instead of RUBY_PLATFORM
 
 ## 0.1.0
 
-#### Initial Implementation
+### Initial Implementation
 * FSEvent instead of filesystem polling on macOS 10.5 Leopard or higher
 * Formerly part of autotest-mac which is now deprecated
