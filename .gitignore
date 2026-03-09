@@ -1,7 +1,16 @@
+# macOS
 .DS_Store
-.direnv
-.envrc
+
+# mise
+.mise.local.toml
+
+# Editors
+.zed
+.vscode
+
+# Ruby
+gems.locked
 pkg/*
 *.gem
 .bundle
-gems.locked
+.yardoc
