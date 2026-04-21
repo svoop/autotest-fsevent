@@ -1,6 +1,7 @@
 ## Main
 
-Nothing so far
+### Improvements
+* Enforce MFA for future gem releases
 
 ## 0.3.1
 

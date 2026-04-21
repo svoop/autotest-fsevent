@@ -18,11 +18,12 @@ Gem::Specification.new do |spec|
   spec.license     = 'MIT'
 
   spec.metadata = {
-    'homepage_uri'      => spec.homepage,
-    'changelog_uri'     => 'https://github.com/svoop/autotest-fsevent/blob/main/CHANGELOG.md',
-    'source_code_uri'   => 'https://github.com/svoop/autotest-fsevent',
-    'documentation_uri' => 'https://www.rubydoc.info/gems/autotest-fsevent',
-    'bug_tracker_uri'   => 'https://github.com/svoop/autotest-fsevent/issues'
+    'homepage_uri'          => spec.homepage,
+    'changelog_uri'         => 'https://github.com/svoop/autotest-fsevent/blob/main/CHANGELOG.md',
+    'source_code_uri'       => 'https://github.com/svoop/autotest-fsevent',
+    'documentation_uri'     => 'https://www.rubydoc.info/gems/autotest-fsevent',
+    'bug_tracker_uri'       => 'https://github.com/svoop/autotest-fsevent/issues',
+    'rubygems_mfa_required' => 'true'
   }
 
   spec.files         = Dir['lib/**/*', 'ext/**/*', 'prebuilt/*', 'post-install.txt']
